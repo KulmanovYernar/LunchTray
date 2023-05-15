@@ -57,6 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
+                    android:onClick='@{() -> viewModel.setSide("salad")}'
                     android:text='@{viewModel.menuItems["salad"].name}'
                     tools:text="Side 1" />
 
@@ -86,7 +87,7 @@
                     android:id="@+id/soup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick='@{()-> viewModel.setSide(viewModel.menuItems["soup"].name)}'
+                    android:onClick='@{()-> viewModel.setSide("soup")}'
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["soup"].name}'
                     tools:text="Side 2" />
@@ -117,7 +118,7 @@
                 <RadioButton
                     android:id="@+id/potatoes"
                     android:layout_width="wrap_content"
-                    android:onClick='@{()-> viewModel.setSide(viewModel.menuItems["potatoes"].name)}'
+                    android:onClick='@{()-> viewModel.setSide("potatoes")}'
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["potatoes"].name}'
@@ -149,7 +150,7 @@
                     android:id="@+id/rice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick='@{()-> viewModel.setSide(viewModel.menuItems["rice"].name)}'
+                    android:onClick='@{()-> viewModel.setSide("rice")}'
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["rice"].name}'
                     tools:text="Side 4" />
