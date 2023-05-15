@@ -55,7 +55,7 @@
                 <RadioButton
                     android:id="@+id/cauliflower"
                     android:layout_width="wrap_content"
-                    android:onClick='@{()-> viewModel.setEntree("cauliFlower")}'
+                    android:onClick='@{()-> viewModel.setEntree("cauliflower")}'
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["cauliflower"].name}'
